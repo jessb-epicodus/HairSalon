@@ -1,18 +1,18 @@
 @{ Layout = "_Layout"; }
 
 @using HairSalon.Models;
-@model HairSalon.Models.Stylist;
+@model HairSalon.Models.Stylist
 <h2>Stylist Details</h2><hr>
 <h4>@Html.DisplayFor(model => model.Name)</h4>
 <p>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)<p>
 <br>
 <h5> Clients: </h5>
-@if (@Model.Count = 0){
-  <h3>No items have been added yet!</h3>
-} @foreach (Client client in Model) {
-  <p>@Html.ActionLink($"{client.Name}", "Name", new { id = client.ClientId }) | @client.Stylist.Name</p>
+@if (@Model.Clients.Count == 0){
+  <p><em>No items have been added yet!</em></p>
+} @foreach (Client client in Model.Clients) {
+  <p>@Html.ActionLink($"{client.Name}", "Name", new { id = client.ClientId })</p>
 }
 <br>
-@* <p>@Html.ActionLink("Add Client", "Create", new {id= client.ClientId})</p> *@
+<p>@Html.ActionLink("Add Client", "Create", "Clients")</p>
 <p>@Html.ActionLink("Edit", "Edit", new { id = Model.StylistId }) | @Html.ActionLink("Delete", "Delete", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Return to Stylists", "Index")</p>
+<p>@Html.ActionLink("Back", "Index")</p>

@@ -1,11 +1,10 @@
 @{ Layout = "_Layout"; }
 
 @model HairSalon.Models.Stylist
-<h4>Add Stylist</h4>
-@using (Html.BeginForm())
-{
+<h4>Add Stylist</h4><hr>
+@using (Html.BeginForm()) {
   @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "Name:", required="required"})
+  @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "Name", required="required"})
   @Html.LabelFor(model => model.Specialty)
   @Html.TextBoxFor(model => model.Specialty, new { @class = "form-control", placeholder = "Specialty:", required="required"}) 
   <input type="submit" value="Add" class="btn btn-dark" />
