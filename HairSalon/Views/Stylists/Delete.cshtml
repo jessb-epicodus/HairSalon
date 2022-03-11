@@ -2,8 +2,9 @@
 
 @model HairSalon.Models.Stylist
 <h2>Delete Stylist</h2><hr>
-<h5>Are you sure you want to delete @Html.DisplayFor(model => model.Name)</h5>
+<h5>Are you sure you want to delete @Html.DisplayFor(model => model.Name)?</h5>
 @using (Html.BeginForm()) {
   <input type="submit" value="Delete" class="btn btn-dark" />
-}<br>
+}
+<br>
 @Html.ActionLink("Return to Stylists", "Index")
