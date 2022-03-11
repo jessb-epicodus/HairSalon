@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using Salon.Models;
+using HairSalon.Models;
 
-namespace Salon.Controllers {
+namespace HairSalon.Controllers {
   public class ClientsController : Controller {
-    private readonly SalonContext _db;
-    public ClientsController(SalonContext db) {
+    private readonly HairSalonContext _db;
+    public ClientsController(HairSalonContext db) {
       _db = db;
     }
   }

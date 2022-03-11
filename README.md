@@ -2,7 +2,7 @@
 
 #### By _**Jessi Baker**_
 
-#### _Salon - Epicodus - C# and .NET - Database Basics - Code Review_
+#### _Hair Salon - Epicodus - C# and .NET - Database Basics - Code Review_
 
 ## Technologies Used
 
@@ -15,13 +15,13 @@
 
 ## Description
 
-This is a MVC web application to help a salon manage their employees (stylists) and their clients. User will be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see a single stylist. Specifically, the user will be able to add new stylists to the system when they are hired; add new clients to a specific stylist; clients must have a stylist in order to be added; see a list of all stylists; select a stylist, see their details, and see a list of all clients that belong to that stylist.
+This is a MVC web application to help a salon manage their stylists and their clients. User will be able to add a list of stylists working at the salon & for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see a single stylist. Specifically, the user will be able to add new stylists to the system when they are hired; add new clients to a specific stylist; clients must have a stylist in order to be added; see a list of all stylists; select a stylist, see their details, and see a list of all clients that belong to that stylist.
 
 ## Setup/Installation Requirements
 
-* Go to _https://github.com/jessb-epicodus/Salon.git_
+* Go to _https://github.com/jessb-epicodus/HairSalon.git_
 * Cone this repository to your desktop (or other desired location)
-* Navigate to the top level of the project directory called _Salon_
+* Navigate to the top level of the project directory called _HairSalon_
 * Enter the following in your terminal to add required packages:
   * _dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0_
   * _dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2_

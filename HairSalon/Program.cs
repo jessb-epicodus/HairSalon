@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace ProjectName {
+namespace HairSalon {
   class Program {
     public static void Main(string[] args) {
       var host = new WebHostBuilder()
