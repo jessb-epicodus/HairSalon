@@ -6,9 +6,10 @@
 @using (Html.BeginForm()) {
   @Html.HiddenFor(model => model.ClientId)
   @Html.LabelFor(model => model.Name)
-  @Html.EditorFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)<br>
   @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+  @Html.DropDownList("StylistId")<br>
   <input type="submit" value="Save" class="btn btn-dark" />
 }
-<p>@Html.ActionLink("View All Clients", "Index")</p>
+<br>
+<p>@Html.ActionLink("Back", "Index")</p>
