@@ -3,9 +3,9 @@
 @using HairSalon.Models;
 <h1>Stylists</h1><hr>
 @if (@Model.Count == 0) {
-  <p><em>No stylists have been added</em><p>
+  <p><em>No stylists have been added</em></p>
 } @foreach (Stylist stylist in Model) {
-  <li>@Html.ActionLink($"{stylist.Name}", "Details", new {id = stylist.StylistId})</li>
+  <h5>@Html.ActionLink($"{stylist.Name}", "Details", new {id = stylist.StylistId})</h5>
 }
 <br>
 <p>@Html.ActionLink("New Stylist", "Create")</p>
