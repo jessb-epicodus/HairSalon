@@ -6,7 +6,7 @@
 @if(@Model.Count == 0) {
   <p><em>No clients have been added</em></p>
 } @foreach(Client client in Model) {
-  <h5>@Html.ActionLink($"{client.Name}", "Details", new {id= client.ClientId})  | <em>Stylist: @client.Stylist.Name</em> </h5>
+  <h5>@Html.ActionLink($"{client.Name}", "Details", new {id= client.ClientId})</h5>
 }
 <br>
 <p>@Html.ActionLink("New Client", "Create")</p>

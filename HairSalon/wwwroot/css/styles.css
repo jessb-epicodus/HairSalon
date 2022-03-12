@@ -1,3 +1,9 @@
 body{
   background: thistle;
 }
+.jumbotron{
+  color: rgba(17, 17, 78, 0.822);
+  background-color: rgba(255, 255, 255, 0.774);
+  display: flex;
+  margin: 10px 10px 10px 10px;
+}
