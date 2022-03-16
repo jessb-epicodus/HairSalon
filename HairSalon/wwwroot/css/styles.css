@@ -1,9 +1,18 @@
 body{
   background: thistle;
 }
-.jumbotron{
+.jumbotron.jumbotron-fluid{
+	text-align: center;
   color: rgba(17, 17, 78, 0.822);
-  background-color: rgba(255, 255, 255, 0.774);
-  display: flex;
+  background-color: white;
   margin: 10px 10px 10px 10px;
+}
+div#footer {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
 }

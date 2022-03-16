@@ -31,12 +31,12 @@ This is a MVC web application to help a salon manage their stylists and their cl
 * Still in the project directory, add a file, _appsettings.json_.  Add the following code to that file & fill in your password as designated
   _{_
     _"ConnectionStrings": {_
-        _"DefaultConnection": "Server=localhost;Port=3306;database=to_do_list;uid=root;pwd=YOUR-PASSWORD-HERE;"_
+        _"DefaultConnection": "Server=localhost;Port=3306;database=jessi_baker;uid=root;pwd=YOUR-PASSWORD-HERE;"_
     _}_
   _}_
 * Protect your password by adding _*/appsettings.json_ to your .gitignore
 * From the project directory install dependeciey by entering _dotnet restore_ in your terminal
-* Still in the project directory enter _dotnet run_ in the command line to use this app
+* To try out this web app enter _dotnet run_ in the command line to use this app
 * _This is not yet published._
 
 ## Known Bugs

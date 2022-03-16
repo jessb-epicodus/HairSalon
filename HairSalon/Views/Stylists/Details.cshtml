@@ -10,8 +10,7 @@
 @if (@Model.Clients.Count == 0){
   <p><em>No clients have been added yet!</em></p>
 } @foreach (Client client in Model.Clients) {
-  <p>@Html.DisplayFor(model => model.Clients.Name)</p>
-  @* <p>@Html.ActionLink($"{client.Name}", "Details/", $"{client.ClientId}", "Clients")</p> *@
+  <p>@Html.ActionLink($"{client.Name}", "Details", $"{client.ClientId}", "Clients") </p>
 }
 <br>
 <p>@Html.ActionLink("Add Client", "Create", "Clients")</p>
