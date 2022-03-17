@@ -19,29 +19,27 @@ This is a MVC web application to help a salon manage their stylists and their cl
 
 ## Setup/Installation Requirements
 
-* This web app uses MySQL as a database.  Directions for install & account setup see _https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql_
-* Go to _https://github.com/jessb-epicodus/HairSalon.git_
-* Cone this repository to your desktop (or other desired location)
-* Navigate to the top level of the project directory called _HairSalon_
-* Enter the following in your terminal to add required packages:
-  * _dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0_
-  * _dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2_
-  * _dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0_
-* To access the database, a _MYSQL_ login & password is required.
-* Still in the project directory, add a file, _appsettings.json_.  Add the following code to that file & fill in your password as designated
-  _{_
-    _"ConnectionStrings": {_
-        _"DefaultConnection": "Server=localhost;Port=3306;database=jessi_baker;uid=root;pwd=YOUR-PASSWORD-HERE;"_
-    _}_
-  _}_
-* Protect your password by adding _*/appsettings.json_ to your .gitignore
-* From the project directory install dependeciey by entering _dotnet restore_ in your terminal
-* To try out this web app enter _dotnet run_ in the command line to use this app
-* _This is not yet published._
+* This web app uses MySQL as a database.  Install & Account Setup: See _https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql_ for instructions
+* Clone Repo: In your terminal navigate to your desktop or other desired location and enter `git clone https://github.com/jessb-epicodus/HairSalon.git`
+* Import The Database Schema: In MySql Workbench, navigate to the administration tab, select Data Import/Restore & import _jessi_baker.sql_
+* Add Required Packages: Navigate to the top level of the project directory called _HairSalon_ & enter each of the following commands.
+  `dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`
+  `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`
+  `dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`
+* Protect Your MySQL Password: Enter `touch .gitignore` & `touch appsettings.json` in the command line
+* Add the following code to _appsettings.json_ & fill in your password where designated.
+  `{
+    "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=3306;database=jessi_baker;uid=root;pwd=YOUR-PASSWORD-HERE;"
+    }
+  }`
+* Add _*/appsettings.json_ to _.gitignore_
+* Install Dependeciey: Enter `dotnet restore` in your terminal
+* Try Out This Web App: Enter `dotnet run` in the command line and navigte navigate to _http://localhost:5000/_ in your browser
+* _This is not yet published_
 
 ## Known Bugs
 
-* Clients listed on stylist detail page are dislpayed as actionlinks with no endpoint
 * Lacks clear error handling / validation in requiring a stylist before adding a client
 
 ## License
