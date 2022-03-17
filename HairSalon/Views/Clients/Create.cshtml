@@ -2,7 +2,7 @@
 
 @model HairSalon.Models.Client
 <h4>New Client</h4><hr>
-@if(ViewBag.Stylists.Count < 0) {
+@if(ViewBag.Stylists.Count < 1) {
   <p><em>Add stylists before adding a new client.</em></p>
 }
 else {
@@ -14,6 +14,5 @@ else {
     <input type="submit" value="Add" class="btn btn-dark" />
   }
 }
-
 <br>
-<p>@Html.ActionLink("View All Clients", "Index")</p>
+<p>@Html.ActionLink("Back", "Index")</p>

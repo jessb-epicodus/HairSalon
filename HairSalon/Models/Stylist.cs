@@ -7,7 +7,7 @@ namespace HairSalon.Models {
     }
     public int StylistId {get; set;}
     public string Name {get; set;}
-    public string Specialty {get; set;} // stretch goal: create specialty class to add or remove multiple specilties per stylist
+    public string Specialty {get; set;}
     public virtual ICollection<Client> Clients {get; set;}
   }
 }
