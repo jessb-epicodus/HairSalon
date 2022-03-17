@@ -40,7 +40,7 @@ This is a MVC web application to help a salon manage their stylists and their cl
 
 ## Known Bugs
 
-* Lacks clear error handling / validation in requiring a stylist before adding a client
+* No known errors.
 
 ## License
 
