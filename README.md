@@ -1,4 +1,4 @@
-# _To Do List_
+# _Hair Salon_
 
 #### By _**Jessi Baker**_
 
